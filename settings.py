@@ -1,5 +1,6 @@
 class Settings:
     """存储所有的设置类"""
+    alien_points: int
 
     def __init__(self):
         """初始化游戏的静态设置"""
@@ -31,6 +32,8 @@ class Settings:
         self.alien_speed_factor = 0.5
         # fleet_direction为1表示向右移，为-1表示向左移
         self.fleet_direction = 1
+        # 计分
+        self.alien_points = 50
 
     def increase_speed(self):
         """提高速度设置"""
