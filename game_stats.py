@@ -1,5 +1,6 @@
 class GameStats:
     """跟踪游戏统计信息"""
+    level: int
     score: int
     ships_left: object
 
@@ -17,3 +18,4 @@ class GameStats:
         self.ships_left = self.ai_settings.ship_limit
         # 计分
         self.score = 0
+        self.level = 1
